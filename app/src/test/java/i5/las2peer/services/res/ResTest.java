@@ -101,8 +101,6 @@ public class ResTest {
       ClientResponse result = c.sendRequest("GET", mainPath + "/test", "");
           
       Assert.assertTrue("Status code equals 200 [143685]", result.getHttpCode() == 200);
-      
-      Assert.assertTrue("Status code equals 201 [57665]", result.getHttpCode() == 201);
 
       System.out.println("Result of 'test$HTTP_Method_Name$': " + result.getResponse().trim());
     } catch (Exception e) {
